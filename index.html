@@ -25,7 +25,7 @@
     </header>
 
     <main>
-      <section id="news">
+      <section id="news" class="section-container">
         <div class="container">
           <h2 class="news-title">Últimas notícias</h2>
           <div class="news-grid">
@@ -36,8 +36,10 @@
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Architecto vitae ducimus aperiam.
                 </h4>
-              </div>              
-              <p class="news-date"><time datetime="2022-02-23">23/02/2022</time></p>
+              </div>
+              <p class="news-date">
+                <time datetime="2022-02-23">23/02/2022</time>
+              </p>
               <p class="news-content">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Architecto vitae ducimus aperiam. Harum, in dicta? Perspiciatis
@@ -56,7 +58,7 @@
                 beatae reiciendis, deleniti corporis, voluptas, eaque ipsa nemo
                 odio? Eligendi sapiente id enim quibusdam, repudiandae optio
                 error! Vitae perspiciatis voluptatem sequi nostrum
-                necessitatibus culpa fuga ...                                                                         
+                necessitatibus culpa fuga ...
               </p>
               <a href="#">Ler mais...</a>
             </div>
@@ -67,8 +69,10 @@
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Architecto vitae ducimus aperiam.
                 </h4>
-              </div>              
-              <p class="news-date"><time datetime="2022-02-23">23/02/2022</time></p>
+              </div>
+              <p class="news-date">
+                <time datetime="2022-02-23">23/02/2022</time>
+              </p>
               <p class="news-content">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Architecto vitae ducimus aperiam. Harum, in dicta? Perspiciatis
@@ -87,7 +91,7 @@
                 beatae reiciendis, deleniti corporis, voluptas, eaque ipsa nemo
                 odio? Eligendi sapiente id enim quibusdam, repudiandae optio
                 error! Vitae perspiciatis voluptatem sequi nostrum
-                necessitatibus culpa fuga ...                                                                         
+                necessitatibus culpa fuga ...
               </p>
               <a href="#">Ler mais...</a>
             </div>
@@ -98,83 +102,79 @@
         </div>
       </section>
 
-      <section id="games">
-        <div class="container">
-          <h2>Jogos</h2>
-          <div class="games-grid">
-            <div class="games-card">
-              <img src="img/game.png" alt="Horizon Forbidden West game art" />
-              <div>
-                <h3>Horizon Forbidden West</h3>
-                <p><span>De</span> Sony Interactive Entertainment</p>
-                <p>9.7</p>
-              </div>
+      <section id="games" class="section-container">
+        <h2>Jogos</h2>
+        <div class="container games-grid">
+          <div class="games-card">
+            <img src="img/game.png" alt="Horizon Forbidden West game art" />
+            <div class="games-info">
+              <h3>Horizon Forbidden West</h3>
+              <p><span>De</span> Sony Interactive Entertainment</p>
+              <h4 class="game-rating">9.7</h4>
             </div>
-            <div class="games-card">
-              <img src="img/game.png" alt="Horizon Forbidden West game art" />
-              <div>
-                <h3>Horizon Forbidden West</h3>
-                <p><span>De</span> Sony Interactive Entertainment</p>
-                <p>9.7</p>
-              </div>
+          </div>
+          <div class="games-card">
+            <img src="img/game.png" alt="Horizon Forbidden West game art" />
+            <div class="games-info">
+              <h3>Horizon Forbidden West</h3>
+              <p><span>De</span> Sony Interactive Entertainment</p>
+              <h4 class="game-rating">9.7</h4>
             </div>
-            <div class="games-card">
-              <img src="img/game.png" alt="Horizon Forbidden West game art" />
-              <div>
-                <h3>Horizon Forbidden West</h3>
-                <p><span>De</span> Sony Interactive Entertainment</p>
-                <p>9.7</p>
-              </div>
+          </div>
+          <div class="games-card">
+            <img src="img/game.png" alt="Horizon Forbidden West game art" />
+            <div class="games-info">
+              <h3>Horizon Forbidden West</h3>
+              <p><span>De</span> Sony Interactive Entertainment</p>
+              <h4 class="game-rating">9.7</h4>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="subscribe">
+      <section id="subscribe" class="section-container">
         <div class="container">
           <h2>Faça sua inscrição</h2>
-          <form class="container ">
-            <div>
-              <input
-                type="text"
-                id="ctrl-name"
-                name="name"
-                placeholder="Nome Completo"
-              />
-            </div>
-
-            <div>
-              <input
-                type="email"
-                id="ctrl-email"
-                name="email"
-                placeholder="Email"
-              />
-            </div>
-
-            <div>
-              <label for="ctrl-radio">Qual sua plataforma preferida?</label>
-              <div id="ctrl-radio">
-                <div>
-                  <input type="radio" id="ctrl-op-1" name="options" />
-                  <label for="ctrl-op-1">PC</label>
-                </div>
-                <div>
-                  <input type="radio" id="ctrl-op-2" name="options" />
-                  <label for="ctrl-op-2">Xbox</label>
-                </div>
-                <div>
-                  <input type="radio" id="ctrl-op-3" name="options" />
-                  <label for="ctrl-op-3">Playstation</label>
+          <form class="form-card">
+            <div class="form-fields">
+              <div>
+                <input
+                  type="text"
+                  id="ctrl-name"
+                  name="name"
+                  placeholder="Nome Completo"
+                />
+              </div>
+              <div>
+                <input
+                  type="email"
+                  id="ctrl-email"
+                  name="email"
+                  placeholder="Email"
+                />
+              </div>
+              <div>
+                <label for="ctrl-radio">Qual sua plataforma preferida?</label>
+                <div id="ctrl-radio">
+                  <div>
+                    <input type="radio" id="ctrl-op-1" name="options" />
+                    <label for="ctrl-op-1">PC</label>
+                  </div>
+                  <div>
+                    <input type="radio" id="ctrl-op-2" name="options" />
+                    <label for="ctrl-op-2">Xbox</label>
+                  </div>
+                  <div>
+                    <input type="radio" id="ctrl-op-3" name="options" />
+                    <label for="ctrl-op-3">Playstation</label>
+                  </div>
                 </div>
               </div>
+              <div>
+                <input type="checkbox" id="ctrl-checkbox" name="sub" />
+                <label for="ctrl-checkbox">Desejo receber novidades.</label>
+              </div>
             </div>
-
-            <div>
-              <input type="checkbox" id="ctrl-checkbox" name="sub" />
-              <label for="ctrl-checkbox">Desejo receber novidades.</label>
-            </div>
-
             <div class="button-flex">
               <input type="submit" class="button" value="Enviar" />
               <input type="reset" class="button" value="Limpar" />

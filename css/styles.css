@@ -27,42 +27,21 @@ a, a:hover {
 }
 
 .container {
-    max-width: 960px;
+    max-width: 990px;
     width: 100%;
     margin: 0 auto;
-    padding: 10px;
+    padding: 0px 10px
 }
 
-.button {
-    color: var(--bg-white);
-    background-color: var(--bg-rose);
-    font-size: 1.125rem;
-    font-weight: 700;
-    width: 244px;
-    height: 67px;
-    border-radius: 8px;
-    border: none;
-    padding: 20px auto;
-    margin-bottom: 20px;
-    cursor: pointer;
- }
-
-.button:hover {
-    color: var(--bg-rose);
-    background-color: var(--bg-white);
-    border: 2px solid var(--bg-rose);
- }
-
-.button:active {
-    color: var(--bg-white);
-    background-color: var(--bg-rose);
-    border: none;
- }
+.section-container {
+    padding: 40px 0px;
+}
 
 header {
     background-color: var(--bg-green);
     height: 90px;
     box-shadow: 0px 4px 6px rgba(38, 38, 38, 0.8);
+    display: flex;
 }
 
 nav {
@@ -88,14 +67,10 @@ main {
     min-height: calc(100vh - 302px);
 }
 
-#news {
-    padding: 20px 0 10px 0;
-}
-
 .news-title {
-    margin-top: 20px;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     text-align: center;
+    font-size: 1.5rem;
     color: var(--bg-gray);
 }
 
@@ -132,26 +107,132 @@ main {
 
 .news-date {
     color: var(--bg-green);
-    font-size: 0.625rem;
+    font-size: 10px;
 }
 
 .news-content {
     color: var(--bg-gray);
-    font-size: 0.625rem;
+    font-size: 10px;
     margin-top: 12px;
     padding-bottom: 14px;
 }
 
 .news-card a {
     color: var(--bg-rose);
-    font-size: 0.875rem;
+    font-size: 14px;
     font-weight: 700;
+}
+
+.button {
+    color: var(--bg-white);
+    background-color: var(--bg-rose);
+    font-size: 18px;
+    font-weight: 700;
+    width: 244px;
+    height: 67px;
+    border-radius: 8px;
+    border: none;
+    padding: 20px auto;
+    margin-bottom: 20px;
+    cursor: pointer;
+ }
+
+.button:hover {
+    color: var(--bg-rose);
+    background-color: var(--bg-white);
+    border: 2px solid var(--bg-rose);
+ }
+
+.button:active {
+    color: var(--bg-white);
+    background-color: var(--bg-rose);
+    border: none;
 }
 
 .button-flex {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#games {
+    background-color: var(--bg-lightgray);
+}
+
+#games h2 {
+    color: var(--bg-green);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.games-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+}
+
+.games-card {
+    width: 300px;
+    margin: 28px 14px 0px 14px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-white);
+    border-radius: 8px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.games-card img {
+    border-radius: 8px 8px 0px 0px;
+}
+
+.games-info {
+    height: 158px;
+    color: var(--bg-gray);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.games-info h3 {
+    margin-top: 28px;
+    font-size: 18px;
+}
+
+.games-info p {
+    font-size: 14px;
+}
+
+.games-info span {
+    color: var(--bg-green);
+    font-weight: 700;
+}
+
+.game-rating {
+    color: var(--bg-green);
+    font-size: 36px;
+    margin-top: 12px;
+}
+
+#subscribe h2 {
+    color: var(--bg-gray);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.form-card {
+    background-color: var(--bg-lightgray);
+    color: var(--bg-gray);
+    border-radius: 8px;
+    padding: 50px 10px 10px 10px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form-card-flex {
+    
 }
 
 footer {
